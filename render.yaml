@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: samosa
+    runtime: docker
+    plan: free
+    envVars:
+      - key: APP_KEY
+        value: base64:U/FUxW0xrxy+GhrUBTL32HpmBMJFHVm7RqeEuc8zB34=
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: LOG_CHANNEL
+        value: stderr
